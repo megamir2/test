@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="66977741d13a4dd4b6ccd227beadde36" Name="Diagram1">
+        <EntityTypeShape EntityType="pr419Model.sysdiagram" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="pr419Model.Заказы" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="pr419Model.Заявкт" Width="1.5" PointX="5.25" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="pr419Model.КатегорииТоваров" Width="1.5" PointX="3" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="pr419Model.Пользователи" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="pr419Model.Поставщики" Width="1.5" PointX="3" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="pr419Model.ПредставителиПоставщиков" Width="1.5" PointX="0.75" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="pr419Model.ПродукцииЗаявки" Width="1.5" PointX="7.5" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="pr419Model.Продукция" Width="1.5" PointX="5.25" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="pr419Model.ПродукцияЗаказа" Width="1.5" PointX="7.5" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="pr419Model.ПродукцияНаСкладе" Width="1.5" PointX="7.5" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="pr419Model.ПунктыВыдачи" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="pr419Model.Роли" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="pr419Model.Склады" Width="1.5" PointX="5.25" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="pr419Model.СтатусЗаказа" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="pr419Model.Терминалы" Width="1.5" PointX="3" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="pr419Model.VW_OrdersDetails" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="pr419Model.VW_ProdutsDetails" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="pr419Model.FK_Заказы_Пользователи1" ManuallyRouted="false" />
+        <AssociationConnector Association="pr419Model.FK_Заказы_ПунктыВыдачи" ManuallyRouted="false" />
+        <AssociationConnector Association="pr419Model.FK_Заказы_СтатусЗаказа" ManuallyRouted="false" />
+        <AssociationConnector Association="pr419Model.FK_Заказы_Терминалы" ManuallyRouted="false" />
+        <AssociationConnector Association="pr419Model.FK_ПродукцияЗаказа_Заказы" ManuallyRouted="false" />
+        <AssociationConnector Association="pr419Model.FK_Заявкт_Поставщики" ManuallyRouted="false" />
+        <AssociationConnector Association="pr419Model.FK_ПродукцииЗаявки_Заявкт" ManuallyRouted="false" />
+        <AssociationConnector Association="pr419Model.FK_Продукция_КатегорииТоваров" ManuallyRouted="false" />
+        <AssociationConnector Association="pr419Model.FK_Пользователи_Роли" ManuallyRouted="false" />
+        <AssociationConnector Association="pr419Model.FK_Поставщики_ПредставителиПоставщиков" ManuallyRouted="false" />
+        <AssociationConnector Association="pr419Model.FK_ПродукцииЗаявки_Продукция" ManuallyRouted="false" />
+        <AssociationConnector Association="pr419Model.FK_ПродукцияЗаказа_Продукция" ManuallyRouted="false" />
+        <AssociationConnector Association="pr419Model.FK_ПродукцияНаСкладе_Продукция" ManuallyRouted="false" />
+        <AssociationConnector Association="pr419Model.FK_ПродукцияНаСкладе_Склады" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
