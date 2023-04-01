@@ -24,7 +24,7 @@ namespace pr419.pages
         public OrdersFrame()
         {
             InitializeComponent();
-
+            Data.page_title.Text = "Корзина";
             LoadPage();
         }
 

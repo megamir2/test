@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\User\source\repos\pr419\pr419\obj\Debug\
+C:\Users\User\Desktop\ПР419\pr419\pr419\obj\Debug\
 pr419
 none
 false
 DEBUG;TRACE
-C:\Users\User\source\repos\pr419\pr419\App.xaml
+C:\Users\User\Desktop\ПР419\pr419\pr419\App.xaml
 7-756229312
 2-1957146511
 3776806666
-1819214837
+181296230615
 MainWindow.xaml;pages\Auth.xaml;pages\Orders.xaml;pages\OrdersEdit.xaml;pages\OrdersFrame.xaml;pages\ProductsEdit.xaml;pages\ProductsFrame.xaml;
 
 False

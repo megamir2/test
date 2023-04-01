@@ -20,7 +20,7 @@ namespace pr419
         public System.DateTime Дата_доставки { get; set; }
         public int Пункт_выдачи { get; set; }
         public Nullable<int> Клиент { get; set; }
-        public int Статус_заказа { get; set; }
+        public int Статус_заказа { get; set; } 
         public int Код_для_получения { get; set; }
         public Nullable<int> Терминал { get; set; }
         public Nullable<int> СтоимостьЗаказа { get; set; }

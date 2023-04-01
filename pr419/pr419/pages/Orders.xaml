@@ -9,20 +9,16 @@
       Title="Orders">
 
     <Grid>
-        
+
         <ListBox x:Name="orders_list" Grid.Row="0">
-            <ListBox.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <WrapPanel/>
-                </ItemsPanelTemplate>
-            </ListBox.ItemsPanel>
 
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Border BorderThickness="1" BorderBrush="#FFFFCC99">
                         <StackPanel Orientation="Vertical" Margin="10">
-                            <TextBlock FontSize="22" FontWeight="Bold" Text="{Binding Path=ид}" />
-                            <TextBlock FontSize="18" Text="{Binding Path=Код_для_получения, StringFormat=код: \{0\} }"/>
+                            <TextBlock FontSize="22" FontWeight="Bold" Text="{Binding Path=ид, StringFormat=номер заказа: \{0\}}" />
+                            <TextBlock FontSize="18" Text="{Binding Path=Дата_доставки, StringFormat=Дата доставки: \{0\} }"/>
+                            <TextBlock FontSize="18" Text="{Binding Path=Код_для_получения, StringFormat=код получения: \{0\} }"/>
                             <TextBlock FontSize="18" Text="{Binding Path=СтоимостьЗаказа, StringFormat=стоимость: \{0\} }"/>
                         </StackPanel>
                         <Border.ContextMenu>

@@ -19,15 +19,14 @@ namespace pr419.pages
     /// Логика взаимодействия для OrdersEdit.xaml
     /// </summary>
     public partial class OrdersEdit : Window
-    {
-
-        Random random;
+    { 
         Заказы заказы;
         public OrdersEdit()
         {
             InitializeComponent();
             
             заказы = new Заказы();
+            заказы.Дата_доставки = DateTime.Now;
 
             DataContext = заказы;
 
@@ -51,7 +50,7 @@ namespace pr419.pages
             
             заказы.Дата_заказа = DateTime.Now;
             заказы.Дата_доставки = (DateTime)date_order.SelectedDate;
-            заказы.Код_для_получения = random.Next(100, 999);
+            заказы.Код_для_получения = (new Random()).Next(100, 999);
             заказы.Статус_заказа = 0;
             заказы.Пункт_выдачи = (place_order.SelectedItem as ПунктыВыдачи).ид;
             if (Data.пользователь != null) заказы.Клиент = Data.пользователь.ид;
@@ -59,7 +58,7 @@ namespace pr419.pages
             Instance.getContext().Заказы.Add(заказы);
             Instance.getContext().SaveChanges();
 
-            int order_id = Instance.getContext().Заказы.Select(u=>u.ид).Last();
+            int order_id = Instance.getContext().Заказы.OrderByDescending(u=>u.ид).FirstOrDefault().ид;
 
             foreach (var item in Order.orders)
             {
@@ -71,6 +70,7 @@ namespace pr419.pages
                 Instance.getContext().SaveChanges();
             }
 
+            Data.open_orders.Visibility = Visibility.Collapsed;
             MessageBox.Show("Ваш заказ успешно записан");
             DialogResult = true;
         }

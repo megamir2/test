@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:pr419.pages"
         mc:Ignorable="d"
-        Title="Заказ" Width="188" ResizeMode="NoResize">
+        Title="Заказ" Width="188" Height="200" ResizeMode="NoResize">
     <Grid Margin="5">
         <StackPanel>
             
